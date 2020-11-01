@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(HFDP VERSION 0.1.0)
+
+message( STATUS "+---------------------------------------+" )
+message( STATUS "|   CMake: Head First: Design Patterns  +" )
+message( STATUS "+---------------------------------------+" )
+
+add_subdirectory( 01_Welcome )
+add_subdirectory( 02_Observer )
+add_subdirectory( 03_Decorator )
+add_subdirectory( 04_Factory )
+add_subdirectory( 05_Singleton )
+add_subdirectory( 06_Command )
+add_subdirectory( 07_AdapterFacade )
+add_subdirectory( 08_TemplateMethod )
+add_subdirectory( 09_IteratorComposite )
+add_subdirectory( 10_State )
+add_subdirectory( 11_Proxy )
+add_subdirectory( 12_Compound )
+add_subdirectory( 13_BetterLiving )
+add_subdirectory( Appendices )
+
