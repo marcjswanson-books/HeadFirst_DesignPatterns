@@ -5,7 +5,7 @@ message( STATUS "+---------------------------------------+" )
 message( STATUS "|   CMake: Head First: Design Patterns  +" )
 message( STATUS "+---------------------------------------+" )
 
-add_subdirectory( 01_Welcome )
+add_subdirectory( 01_Strategy )
 add_subdirectory( 02_Observer )
 add_subdirectory( 03_Decorator )
 add_subdirectory( 04_Factory )
