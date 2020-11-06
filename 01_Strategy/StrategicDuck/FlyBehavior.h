@@ -1,0 +1,13 @@
+#ifndef HFDP_01WELCOME_FINALDUCK_FLYBEHAVIOR 
+#define HFDP_01WELCOME_FINALDUCK_FLYBEHAVIOR
+
+class FlyBehavior
+{
+    public:
+        void fly() = 0;
+}
+
+
+
+
+// HFDP_01WELCOME_FINALDUCK_FLYBEHAVIOR
