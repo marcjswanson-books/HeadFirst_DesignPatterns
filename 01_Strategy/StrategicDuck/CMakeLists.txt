@@ -3,7 +3,5 @@ project( StrategicDuck VERSION 0.1.0)
 
 message( STATUS "CMake: ${PROJECT_NAME}" )
 
-add_executable( StrategicDuckSimulator
-	main.cpp
-)
+add_subdirectory( src )
 
