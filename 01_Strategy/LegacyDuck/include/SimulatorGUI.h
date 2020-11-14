@@ -1,10 +1,10 @@
-#ifndef HFDP_01STRATEGY_SIMULATORGUI_H
-#define HFDP_01STRATEGY_SIMULATORGUI_H
+#ifndef HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_SIMULATORGUI_H_
+#define HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_SIMULATORGUI_H_
 
 #include "Duck.h"
 
 class SimulatorGUI {
-public:
+ public:
   SimulatorGUI();
   ~SimulatorGUI();
 
@@ -17,8 +17,8 @@ public:
 
   static const unsigned int MAX_DUCKS = 12;
 
-private:
+ private:
   Duck *_ducks[MAX_DUCKS];
 };
 
-#endif // HFDP_01STRATEGY_SIMULATORGUI_H
+#endif  // HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_SIMULATORGUI_H_

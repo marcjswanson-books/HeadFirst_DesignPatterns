@@ -1,10 +1,10 @@
-#ifndef HFDP_01STRATEGY_MALLARDDUCK_H
-#define HFDP_01STRATEGY_MALLARDDUCK_H
+#ifndef HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_MALLARDDUCK_H_
+#define HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_MALLARDDUCK_H_
 
 #include "Duck.h"
 
 class MallardDuck : public Duck {
-public:
+ public:
   MallardDuck();
   virtual ~MallardDuck();
 
@@ -13,8 +13,8 @@ public:
   virtual void display();
   // other duck-like methods
 
-private:
+ private:
   static unsigned int _newID;
 };
 
-#endif // HFDP_01STRATEGY_MALLARDDUCK_H
+#endif  // HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_MALLARDDUCK_H_

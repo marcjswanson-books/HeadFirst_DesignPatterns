@@ -1,10 +1,10 @@
-#ifndef HFDP_01STRATEGY_REDHEADDUCK_H
-#define HFDP_01STRATEGY_REDHEADDUCK_H
+#ifndef HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_REDHEADDUCK_H_
+#define HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_REDHEADDUCK_H_
 
 #include "Duck.h"
 
 class RedHeadDuck : public Duck {
-public:
+ public:
   RedHeadDuck();
   virtual ~RedHeadDuck();
 
@@ -13,8 +13,8 @@ public:
   virtual void display();
   // other duck-like methods
 
-private:
+ private:
   static unsigned int _newID;
 };
 
-#endif // HFDP_01STRATEGY_REDHEADDUCK_H
+#endif  // HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_REDHEADDUCK_H_
