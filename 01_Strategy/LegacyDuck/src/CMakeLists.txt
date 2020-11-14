@@ -8,4 +8,5 @@ add_executable( LegacyDuckSimulator
 	Duck.cc
 	MallardDuck.cc
 	RedHeadDuck.cc
+	RubberDuck.cc
 )

@@ -4,23 +4,27 @@
 
 #include "MallardDuck.h"
 #include "RedHeadDuck.h"
+#include "RubberDuck.h"
 #include "global_includes.h"
 
 SimulatorGUI::SimulatorGUI() {
   ::srand(time(NULL));
   for (int i = 0; i < MAX_DUCKS; i++) {
-    int number = ::rand() % 2;
+    int number = ::rand() % 3;
 
     switch (number) {
-    case 0:
-      _ducks[i] = new MallardDuck();
-      break;
-    case 1:
-      _ducks[i] = new RedHeadDuck();
-      break;
-    default:
-      _ducks[i] = nullptr;
-      break;
+      case 0:
+        _ducks[i] = new MallardDuck();
+        break;
+      case 1:
+        _ducks[i] = new RedHeadDuck();
+        break;
+      case 2:
+        _ducks[i] = new RubberDuck();
+        break;
+      default:
+        _ducks[i] = nullptr;
+        break;
     }
   }
 }
