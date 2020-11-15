@@ -1,0 +1,14 @@
+#ifndef HEADFIRST_DESIGNPATTERNS_01_STRATEGY_STRATEGICDUCK_FLYNOWAY_H_
+#define HEADFIRST_DESIGNPATTERNS_01_STRATEGY_STRATEGICDUCK_FLYNOWAY_H_
+
+#include "FlyBehavior.h"
+
+class FlyNoWay : public FlyBehavior {
+ public:
+  FlyNoWay();
+  ~FlyNoWay();
+
+  unsigned int fly();
+};
+
+#endif  // HEADFIRST_DESIGNPATTERNS_01_STRATEGY_STRATEGICDUCK_FLYNOWAY_H_

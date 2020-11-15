@@ -1,11 +1,13 @@
 #include <iostream>
 
-using namespace std;
+#include "SimulatorGUI.h"
 
 int main() {
-  cout << "+-------------------------------+" << endl;
-  cout << "|    Strategic Duck Simulator   |" << endl;
-  cout << "+-------------------------------+" << endl;
+  SimulatorGUI gui;
+
+  gui.splashScreen();
+
+  gui.run();
 
   return 0;
 }

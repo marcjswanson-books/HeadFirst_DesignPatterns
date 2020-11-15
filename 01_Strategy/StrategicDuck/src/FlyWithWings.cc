@@ -1,9 +1,17 @@
 #include "FlyWithWings.h"
 
-#include "globalIncludes.h"
+#include <iostream>
+
+using std::cout;
+using std::string;
 
 FlyWithWings::FlyWithWings() {}
 
 FlyWithWings::~FlyWithWings() {}
 
-void FlyWithWings::fly() { cou }
+unsigned int FlyWithWings::fly() {
+  string output = "Airborne";
+  cout << output;
+
+  return output.length();
+}
