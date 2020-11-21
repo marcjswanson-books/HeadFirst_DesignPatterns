@@ -8,6 +8,8 @@ using std::endl;
 using std::string;
 
 #include "MallardDuck.h"
+#include "RedHeadDuck.h"
+#include "RubberDuck.h"
 
 SimulatorGUI::SimulatorGUI() {
   ::srand(time(NULL));
@@ -20,10 +22,10 @@ SimulatorGUI::SimulatorGUI() {
         _ducks[i] = new MallardDuck();
         break;
       case 1:
-        _ducks[i] = nullptr;
+        _ducks[i] = new RedHeadDuck();
         break;
       case 2:
-        _ducks[i] = nullptr;
+        _ducks[i] = new RubberDuck();
         break;
       default:
         _ducks[i] = nullptr;
@@ -136,7 +138,7 @@ void SimulatorGUI::allDucksFly() {
 
   for (int i = 0; i < MAX_DUCKS; i++) {
     if (_ducks[i] != nullptr) {
-      fillCell(_ducks[i]->swim());
+      fillCell(_ducks[i]->fly());
     } else {
       fillCell("NULL");
     }

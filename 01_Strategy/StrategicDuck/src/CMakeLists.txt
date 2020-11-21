@@ -9,7 +9,10 @@ add_executable( StrategicDuckSimulator
 	FlyNoWay.cc
 	Quack.cc
 	Squeak.cc
+	Meow.cc
 	MuteQuack.cc
 	Duck.cc
 	MallardDuck.cc
+	RedHeadDuck.cc
+	RubberDuck.cc
 )
