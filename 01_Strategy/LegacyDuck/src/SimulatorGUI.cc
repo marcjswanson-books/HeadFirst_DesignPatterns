@@ -1,11 +1,16 @@
-#include "SimulatorGUI.h"
-
 #include <cstdlib>
+#include <iostream>
+
+using std::cout;
+using std::endl;
 
 #include "MallardDuck.h"
 #include "RedHeadDuck.h"
 #include "RubberDuck.h"
-#include "global_includes.h"
+#include "SimulatorGUI.h"
+
+namespace Strategy {
+namespace LegacyDuck {
 
 SimulatorGUI::SimulatorGUI() {
   ::srand(time(NULL));
@@ -84,3 +89,6 @@ void SimulatorGUI::splashScreen() {
   cout << "|     Legacy Duck Simulator   |" << endl;
   cout << "+-----------------------------+" << endl;
 }
+
+}  // namespace LegacyDuck
+}  // namespace Strategy

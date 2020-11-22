@@ -5,6 +5,9 @@
 using std::cout;
 using std::string;
 
+namespace Strategy {
+namespace StrategicDuck {
+
 FlyWithWings::FlyWithWings() {}
 
 FlyWithWings::~FlyWithWings() {}
@@ -15,3 +18,6 @@ unsigned int FlyWithWings::fly() {
 
   return output.length();
 }
+
+}  // namespace StrategicDuck
+}  // namespace Strategy

@@ -9,6 +9,9 @@
 using std::cout;
 using std::string;
 
+namespace Strategy {
+namespace StrategicDuck {
+
 unsigned int MallardDuck::_newID = 0;
 
 MallardDuck::MallardDuck() {
@@ -19,3 +22,6 @@ MallardDuck::MallardDuck() {
 }
 
 MallardDuck::~MallardDuck() {}
+
+}  // namespace StrategicDuck
+}  // namespace Strategy

@@ -5,6 +5,9 @@
 using std::cout;
 using std::string;
 
+namespace Strategy {
+namespace StrategicDuck {
+
 Quack::Quack() {}
 
 Quack::~Quack() {}
@@ -15,3 +18,6 @@ unsigned int Quack::quack() {
 
   return output.length();
 }
+
+}  // namespace StrategicDuck
+}  // namespace Strategy

@@ -9,6 +9,9 @@
 using std::cout;
 using std::string;
 
+namespace Strategy {
+namespace StrategicDuck {
+
 unsigned int RedHeadDuck::_newID = 0;
 
 RedHeadDuck::RedHeadDuck() {
@@ -19,3 +22,6 @@ RedHeadDuck::RedHeadDuck() {
 }
 
 RedHeadDuck::~RedHeadDuck() {}
+
+}  // namespace StrategicDuck
+}  // namespace Strategy

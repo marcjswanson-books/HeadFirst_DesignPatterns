@@ -1,7 +1,10 @@
+#include <iostream>
+using namespace std;
 
 #include "MallardDuck.h"
 
-#include "global_includes.h"
+namespace Strategy {
+namespace LegacyDuck {
 
 unsigned int MallardDuck::_newID = 0;
 
@@ -26,3 +29,6 @@ void MallardDuck::display() {
 
   return;
 }
+
+}  // namespace LegacyDuck
+}  // namespace Strategy

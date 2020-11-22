@@ -11,6 +11,9 @@ using std::string;
 #include "RedHeadDuck.h"
 #include "RubberDuck.h"
 
+namespace Strategy {
+namespace StrategicDuck {
+
 SimulatorGUI::SimulatorGUI() {
   ::srand(time(NULL));
   for (int i = 0; i < MAX_DUCKS; i++) {
@@ -152,3 +155,6 @@ void SimulatorGUI::splashScreen() {
   cout << "|    Strategic Duck Simulator   |" << endl;
   cout << "+-------------------------------+" << endl;
 }
+
+}  // namespace StrategicDuck
+}  // namespace Strategy

@@ -6,6 +6,9 @@ using std::cout;
 using std::string;
 using std::to_string;
 
+namespace Strategy {
+namespace StrategicDuck {
+
 Duck::Duck(){};
 
 Duck::~Duck() {
@@ -35,3 +38,6 @@ unsigned int Duck::display() {
 
   return output.length();
 }
+
+}  // namespace StrategicDuck
+}  // namespace Strategy

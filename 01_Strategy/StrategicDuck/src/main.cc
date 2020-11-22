@@ -3,7 +3,7 @@
 #include "SimulatorGUI.h"
 
 int main() {
-  SimulatorGUI gui;
+  Strategy::StrategicDuck::SimulatorGUI gui;
 
   gui.splashScreen();
 

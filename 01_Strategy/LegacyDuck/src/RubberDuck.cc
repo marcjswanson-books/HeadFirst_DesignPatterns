@@ -1,7 +1,13 @@
+#include <iostream>
+#include <string>
+
+using std::cout;
+using std::to_string;
 
 #include "RubberDuck.h"
 
-#include "global_includes.h"
+namespace Strategy {
+namespace LegacyDuck {
 
 unsigned int RubberDuck::_newID = 0;
 
@@ -26,3 +32,5 @@ void RubberDuck::display() {
 
   return;
 }
+}  // namespace LegacyDuck
+}  // namespace Strategy

@@ -1,7 +1,13 @@
+#include <iostream>
+#include <string>
+
+using std::cout;
+using std::to_string;
 
 #include "RedHeadDuck.h"
 
-#include "global_includes.h"
+namespace Strategy {
+namespace LegacyDuck {
 
 unsigned int RedHeadDuck::_newID = 0;
 
@@ -28,3 +34,6 @@ void RedHeadDuck::display() {
 
   return;
 }
+
+}  // namespace LegacyDuck
+}  // namespace Strategy

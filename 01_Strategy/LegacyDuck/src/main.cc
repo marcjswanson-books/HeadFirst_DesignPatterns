@@ -1,10 +1,9 @@
 #include "MallardDuck.h"
 #include "RedHeadDuck.h"
 #include "SimulatorGUI.h"
-#include "global_includes.h"
 
 int main() {
-  SimulatorGUI gui;
+  Strategy::LegacyDuck::SimulatorGUI gui;
 
   gui.splashScreen();
 
