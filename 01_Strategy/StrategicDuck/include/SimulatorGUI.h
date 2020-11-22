@@ -2,10 +2,12 @@
 #define HEADFIRST_DESIGNPATTERNS_01_STRATEGY_STRATEGICDUCK_SIMULATORGUI_H_
 
 #include <iostream>
+#include <vector>
 
 #include "Duck.h"
 
 using std::string;
+using std::vector;
 
 namespace Strategy {
 namespace StrategicDuck {
@@ -96,7 +98,7 @@ class SimulatorGUI {
    */
   void allDucksFly();
 
-  Duck* _ducks[MAX_DUCKS];
+  vector<Duck*> _ducks;
 };
 
 }  // namespace StrategicDuck

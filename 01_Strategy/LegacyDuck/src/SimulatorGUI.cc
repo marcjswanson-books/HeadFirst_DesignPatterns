@@ -14,32 +14,35 @@ namespace LegacyDuck {
 
 SimulatorGUI::SimulatorGUI() {
   ::srand(time(NULL));
+
   for (int i = 0; i < MAX_DUCKS; i++) {
     int number = ::rand() % 3;
 
     switch (number) {
       case 0:
-        _ducks[i] = new MallardDuck();
+        _ducks.push_back(new MallardDuck());
         break;
       case 1:
-        _ducks[i] = new RedHeadDuck();
+        _ducks.push_back(new RedHeadDuck());
         break;
       case 2:
-        _ducks[i] = new RubberDuck();
+        _ducks.push_back(new RubberDuck());
         break;
       default:
-        _ducks[i] = nullptr;
+        _ducks.push_back(nullptr);
         break;
     }
   }
 }
 
 SimulatorGUI::~SimulatorGUI() {
-  for (int i = 0; i < MAX_DUCKS; i++) {
-    if (_ducks[i] != nullptr) {
-      delete _ducks[i];
+  for (auto pDuck : _ducks) {
+    if (pDuck != nullptr) {
+      delete pDuck;
     }
   }
+
+  _ducks.clear();
 }
 
 int SimulatorGUI::getDuckCount() {

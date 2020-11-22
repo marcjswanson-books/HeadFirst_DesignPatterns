@@ -1,6 +1,10 @@
 #ifndef HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_SIMULATORGUI_H_
 #define HEADFIRST_DESIGNPATTERNS_01_STRATEGY_LEGACYDUCK_SIMULATORGUI_H_
 
+#include <vector>
+
+using std::vector;
+
 #include "Duck.h"
 
 namespace Strategy {
@@ -49,8 +53,9 @@ class SimulatorGUI {
   static const unsigned int MAX_DUCKS = 12;
 
  private:
-  Duck *_ducks[MAX_DUCKS];
+  vector<Duck *> _ducks;
 };
+
 }  // namespace LegacyDuck
 }  // namespace Strategy
 
