@@ -23,7 +23,7 @@ class StatisticsDisplay : public Observer, DisplayElement {
   virtual ~StatisticsDisplay();
 
   /**
-   * @brief
+   * @brief Update the data required for determining temperature statistics.
    */
   virtual void update();
 

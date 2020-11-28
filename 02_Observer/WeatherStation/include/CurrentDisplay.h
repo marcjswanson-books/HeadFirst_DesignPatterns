@@ -23,7 +23,7 @@ class CurrentDisplay : public Observer, DisplayElement {
   virtual ~CurrentDisplay();
 
   /**
-   * @brief
+   * @brief Update the information that the Current Display needs.
    */
   virtual void update();
 

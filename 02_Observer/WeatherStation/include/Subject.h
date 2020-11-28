@@ -12,10 +12,28 @@ namespace WeatherStation {
 
 class Subject {
  public:
+  /**
+   * @brief Construct a new Subject object
+   */
   Subject();
+
+  /**
+   * @brief Destroy the Subject object
+   */
   virtual ~Subject();
 
+  /**
+   * @brief Subscribe the obeserver to this subject.
+   *
+   * @param observer The object that will get calledon update()
+   */
   void registerObserver(Observer* observer);
+
+  /**
+   * @brief  Unsubscrive the observer from this subject.
+   *
+   * @param observer The observer to be removed.
+   */
   void removeObserver(Observer* observer);
 
  protected:

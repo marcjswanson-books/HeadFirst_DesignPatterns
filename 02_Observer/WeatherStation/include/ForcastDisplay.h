@@ -23,7 +23,7 @@ class ForcastDisplay : public Observer, DisplayElement {
   virtual ~ForcastDisplay();
 
   /**
-   * @brief
+   * @brief Update the data requried to forcast the weather.
    */
   virtual void update();
 
