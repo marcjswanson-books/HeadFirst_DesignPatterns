@@ -19,7 +19,7 @@ class DisplayElement {
   virtual ~DisplayElement() {}
 
   /**
-   * @brief Pure virtual
+   * @brief Override with specific display implementations.
    */
   virtual void display() = 0;
 };

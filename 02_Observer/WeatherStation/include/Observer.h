@@ -19,7 +19,7 @@ class Observer {
   virtual ~Observer() {}
 
   /**
-   * @brief Pure virtual
+   * @brief Override with specific implmentations.
    */
   virtual void update() = 0;
 };

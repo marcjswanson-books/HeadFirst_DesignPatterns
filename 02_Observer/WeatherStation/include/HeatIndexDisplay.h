@@ -23,7 +23,7 @@ class HeatIndexDisplay : public Observer, DisplayElement {
   virtual ~HeatIndexDisplay();
 
   /**
-   * @brief
+   * @brief Update the data required for determining the heat index.
    */
   virtual void update();
 

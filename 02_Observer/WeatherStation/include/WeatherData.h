@@ -8,12 +8,33 @@ namespace WeatherStation {
 
 class WeatherData : public Subject {
  public:
+  /**
+   * @brief Construct a new Weather Data object
+   */
   WeatherData();
+  /**
+   * @brief Destroy the Weather Data object
+   */
   virtual ~WeatherData();
 
+  /**
+   * @brief Get the Temperature object
+   * @return float
+   */
   float getTemperature();
+  /**
+   * @brief Get the Humidity object
+   * @return float
+   */
   float getHumidity();
+  /**
+   * @brief Get the Pressure object
+   * @return float
+   */
   float getPressure();
+  /**
+   * @brief Called to indicate that the measurments have changed.
+   */
   void measurementsChanged();
 
   /**
